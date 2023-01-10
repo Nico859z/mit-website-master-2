@@ -1,0 +1,86 @@
+4<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+     <link rel="icon" type="image/svg+xml" href="Img/SVG/favicon.svg" />
+  </head>
+
+  <body>
+    <header id="my_header">
+      <div id="burgermenu">☰</div>
+      <div id="nav" class="hidden">
+        <nav>
+          <a href="index.html">FORSIDE</a>
+          <a href="web.html">WEB</a>
+          <a href="ux.html">UX</a>
+          <a href="animation.html">ANIMATION</a>
+          <a href="indhold.html">INDHOLD</a>
+          <a href="portfolio.html">PORTFOLIO</a>
+          <a href="ommig.html">OM MIG</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+         <section id="section4">
+        <h1>Portfolio - Nicoline Wedel</h1>
+        
+            <h2>Tema 4 Grundlæggende Animation</h2>
+          <div class="section_wrapper">
+          <div class="col">
+
+            <img src="img/artboard.png" alt="mygame" />
+             <br /><br />
+            <img src="img/startskaerm.png" alt="spil" />
+             <br /><br />
+            <img src="img/vinderskaerm.png" alt="spil"/>
+             <br /><br />
+            <img src="img/taberskaerm.png" alt="spil"/>
+            <br /><br />
+            <img src="img/skitse_spil1.jpg" alt="spil"/>
+            <br> <br>
+            <img src="img/skitse_spil2.jpg" alt="spil"/>
+          </div>
+          <div class="col">
+            <h3>Individuelt spil</h3>
+            <p>
+              Vi skulle i dette tema starte med at vælge et stiludgangspunkt for derefter at lave en paper prototype over vores spil. Mine tegninger kan man se i højre side, og er lavet på ideen om et Mc’Donalds spil, som foregår i McD-butikken. Her skal der ryge nuggets og cheeseburgere ned fra toppen af hjemmesiden, og så skal man kunne klikke på alle de nuggets man kan, i stedet for cheeseburgerne. Og hver gang du klikker på en nugget, ryger den i en teambox, og hvis du trykker på cheeseburgeren mister du et liv, og du har 3 liv inden ”GAME OVER”. Det gælder om at få samlet 20 nuggets i teamboxen, før du har vundet.
+Jeg har valgt at bruge en Cola som ”timer”, så der er mindre cola i colaflasken jo længere tid, der er gået.
+
+             
+              <br /><br />
+              Jeg har designet og lave spillet i stilen “Kawaii”, som er en stil der ikke er for detaljeret, men har runde former, store hoveder, runde øjne og næser, med inspiration fra baby-face bias. Skriften er blød, der er gjort brug af lyse og indbydende farver. Vi lærte om baggrundsdesign, hvor jeg fik nogle gode indsigter i Rule of thirds, Fokuspunkt, Atmosfærisk perspektiv, Horisontlinje og Dybde i billedet
+              <br /><br />
+             Jeg skulle ud fra min ide også lave et aktivitetsdiagram, så man punkt for punkt kunne følge med i processen i spillet for hver ting, man klikkede på. Det giver andre en forståelse for sin ide på en detaljeret måde for derefter at kode det ind i Javascript. 
+              <br /><br />
+             JavaScript bruges til at tilføje interaktivitet og dynamik til ens hjemmeside, f.eks. at reagere på brugerens handlinger, hente data fra en server osv. Det er et programmeringssprog, der kører i browseren og er et af de mest grundlæggende og udbredte programmer sammen med HTML og CSS.
+              <br /><br />
+              
+            </p>
+
+            
+
+            <div class="col">
+              <img src="img/aktivitetsdiagram.png" alt="spil"/>
+            
+            </div>
+
+             <p>
+              Kigger man på min javascript kode, så skal jeg få den ”røde”, som er en figur på skærmen, til at forvinde, når man klikker på den. Min funktion hedder ClickRedHandler og får første console.log for at kunne se den i sin browser, når man går ind på sin inspec-console. 
+Den får herefter en querySelector på, der vælger min ”#red_container”, som er figuren i min HTML, og den forsvinder så, når man klikker på den, da den har fået classList ”forsvind”.
+
+            </p>
+            <img src="img/klik.forsvind.java.png" alt="spil"/>
+            <p>
+              Jeg afprøvede også en anden funktion, som gik ud på at få figuren til at ”flyve” hen over skærmen, hvor den skulle fryse, når man klikker på den og bagefter forsvinde helt fra skærmen. Derefter skulle den genstarte og fortsætte, men bare med en ny position.<br>Lige som før, har jeg sat en console.log på min clickRedHandler, derunder en querySelector, der nu har classList ”frys”, derefter tilføjer jeg en sprite til classList ”forsvind”, da man typisk bruger sprite, hvis noget skal forsvinde, og container hvis det bare skal køre frem og tilbage på skærmen. 
+            </p>
+            <img src="img/flyv.frys.forsvind.png" alt="spil"/>
+    </main>
+   
+    <script src="script.js"></script>
+  </body>
+</html>
